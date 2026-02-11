@@ -1,0 +1,72 @@
+// Container
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+}
+
+// Flexbox utilities
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+// Grid utilities
+.grid {
+    display: grid;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-md;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacing-md;
+}
+
+// Spacing utilities
+.section {
+    padding: $spacing-xl 0;
+}
+
+.mb-sm {
+    margin-bottom: $spacing-sm;
+}
+
+.mb-md {
+    margin-bottom: $spacing-md;
+}
+
+.mb-lg {
+    margin-bottom: $spacing-lg;
+}
+
+.mt-sm {
+    margin-top: $spacing-sm;
+}
+
+.mt-md {
+    margin-top: $spacing-md;
+}
+
+.mt-lg {
+    margin-top: $spacing-lg;
+}

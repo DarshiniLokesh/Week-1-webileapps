@@ -1,0 +1,76 @@
+// Reset
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Base styles
+html {
+    font-size: $font-size-base;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: $font-weight-regular;
+    line-height: 1.6;
+    color: $color-black;
+    background-color: $color-white;
+}
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $font-weight-medium;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: $font-size-h1;
+}
+
+h2 {
+    font-size: $font-size-h2;
+}
+
+h3 {
+    font-size: $font-size-h3;
+}
+
+p {
+    font-size: $font-size-body;
+}
+
+// Links
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// Lists
+ul,
+ol {
+    list-style: none;
+}
+
+// Images
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+// Buttons
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
