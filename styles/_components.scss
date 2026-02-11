@@ -95,10 +95,6 @@
         list-style: none;
     }
 
-    &__item {
-        // Individual menu item styles if needed
-    }
-
     &__link {
         color: $color-dark;
         font-size: $font-size-body;
@@ -131,12 +127,47 @@
 
 // Hero Section
 .hero {
-    // Hero styles will go here
-}
+    background-color: $color-white;
 
-// Services Section
-.services {
-    // Services styles will go here
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: $spacing-lg;
+
+        @media (max-width: $breakpoint-mobile) {
+            flex-direction: column;
+            gap: $spacing-md;
+        }
+    }
+
+    &__text {
+        flex: 1;
+        max-width: 550px;
+    }
+
+    &__title {
+        margin-bottom: $spacing-md;
+        line-height: 1.1;
+    }
+
+    &__description {
+        margin-bottom: $spacing-md;
+        color: lighten($color-black, 20%);
+        line-height: 1.7;
+    }
+
+    &__image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+    }
 }
 
 // Footer

@@ -245,6 +245,45 @@ button {
   width: 100%;
 }
 
+.hero {
+  background-color: #FFFFFF;
+}
+.hero__content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+@media (max-width: 768px) {
+  .hero__content {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.hero__text {
+  flex: 1;
+  max-width: 550px;
+}
+.hero__title {
+  margin-bottom: 40px;
+  line-height: 1.1;
+}
+.hero__description {
+  margin-bottom: 40px;
+  color: #333333;
+  line-height: 1.7;
+}
+.hero__image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
 .footer {
   background-color: #191A23;
   color: #FFFFFF;
